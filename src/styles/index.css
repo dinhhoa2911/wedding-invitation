@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Corinthia&family=Be+Vietnam+Pro:wght@100;300;400;700&family=Encode+Sans:wght@300;400;700&family=Pinyon+Script&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.font-cormorant { font-family: 'Cormorant Unicase', serif; }
+.font-corinthia { font-family: 'Corinthia', cursive; }
+.font-pinyon { font-family: 'Pinyon Script', cursive; }
+.font-vietnam { font-family: 'Be Vietnam Pro', sans-serif; }
+.font-encode { font-family: 'Encode Sans', sans-serif; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 1s ease-out forwards;
+}
+
+/* Custom Scrollbar cho Sổ lưu bút */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #545F1B;
+  border-radius: 10px;
+}
+
+.event-card-bg {
+  background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://www.transparenttextures.com/patterns/natural-paper.png');
+}
